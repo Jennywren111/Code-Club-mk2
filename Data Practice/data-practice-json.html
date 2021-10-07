@@ -6,8 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 0.9rem;
+    }
+    a:link, a:visited, a:hover, a:active {
+      color: #00AAFF;
+    }
+  </style>
 </head>
 <body>
-  
+
+  <h1>Understanding large JSON data structures</h1>
+  <p>Here, have a large JSON data structure:</p>
+  <a href="https://codepen.io/rikkig/pen/vYZjmoR" target="_blank">https://codepen.io/rikkig/pen/vYZjmoR</a>
+
+  <p>And here’s the JSON viewer</p>
+  <a href="http://jsonviewer.stack.hu/" target="_blank">http://jsonviewer.stack.hu/</a>
+
+  <p>Remember, in the codepen, copy the JSON excluding the quotes, and paste it into the above link, in the Text tab.  Then switch to the ‘Viewer’ tab.</p>
+
+  <p><b>Go play!</b></p>
+
+  <p>Now, here’s a few tasks!</p>
+
+  <p>The clue here is ‘understanding’.  If you get to a point where you don’t finish any of these, but you simply understand how to do it, that’s good enough.</p>
+
+  <p>So below are some function names.  I want you to make them work!</p>  
+
+  <h2>Tips</h2>
+  <ul>
+  <li>When it starts with log, I don’t care how - console, whatever, but just output stuff somewhere however you see fit</li>
+  <li>When it starts with ‘get’, then I want it to return ‘data’ of some sort.  Don’t care what.  An object, array, even a string!</li>
+  <li>When it starts with ‘find’ then I want it to find something based on the input.</li>
+  <li>Where applicable after each function name, there’s an example input.  But obviously it should work with any valid value thrown at it.</li>
+  <!--<li>If a ‘get’ function</li> -->
+  </ul>
+  <ol>
+  <li>logNamesAndPhoneNumbers();</li>
+  <li>getNamesAndPhoneNumbers();</li>
+  <li>getEmail(index); // index = 5</li>
+  <li>findEmail(uid); // uid = "51A2B622F"</li>
+  <li>getCounty(town); // town = "Faringdon"</li>
+  <li>logTownAndCounty(id); // id = 335</li>
+  <li>getFullAddress(uid); // uid = "51A2B622F"</li>
+  <li>getDrugUsed(firstName, surname); // firstName = "Ann", surname = "Smith"</li>
+  <li>getParticipantEmails(drug); // drug = "control"</li>
+  <li>getAverageEndTemperature(drug); // drug = "B"</li></ol>
+
+  <p>Lastly, if you wish, you don’t have to code this, but think of ways you could write code to analyse this data to work out which drug was better/worse.  As in maybe just come up with function names or ideas.  10, above, is a sort of clue! </p>
+    
 </body>
 </html>
