@@ -6,6 +6,8 @@ var data = JSON.parse(rawdata);
 // console.log('\nDATA\n----\n');
 // console.log(data); // logs the actual JS data object
 
+// Challenge 1
+
 logNamesAndPhoneNumbers(data);
 
 function logNamesAndPhoneNumbers(data) {
@@ -32,9 +34,24 @@ function logNamesAndPhoneNumbers(data) {
 
 }
 
+// Challenge 2
+
+// getNamesAndPhoneNumbers();
 
 
 
+// Challenge 3
+
+getEmail(3, data);
+
+function getEmail(index, data) {
+  if (data.participants[index].email) {
+    console.log(data.participants[index].email)
+  }
+  else {
+    console.log("Participant has no email address listed.")
+  }
+}
 
 
 
